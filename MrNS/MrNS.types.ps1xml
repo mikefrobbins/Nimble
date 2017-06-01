@@ -1,0 +1,24 @@
+﻿<Types>
+    <Type>
+      <Name>MrNS.Token</Name>
+      <Members>
+        <ScriptProperty>
+          <Name>CreateTime</Name>
+          <GetScriptBlock>
+            (Get-Date -Date '1/1/1970').AddSeconds($this.creation_time)
+          </GetScriptBlock>
+        </ScriptProperty>
+      </Members>
+    </Type>
+    <Type>
+      <Name>MrNS.Token</Name>
+      <Members>
+        <ScriptProperty>
+          <Name>ModifiedTime</Name>
+          <GetScriptBlock>
+            (Get-Date -Date '1/1/1970').AddSeconds($this.last_modified)
+          </GetScriptBlock>
+        </ScriptProperty>
+      </Members>
+    </Type>
+</Types>
