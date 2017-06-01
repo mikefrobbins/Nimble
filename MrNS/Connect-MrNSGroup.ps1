@@ -56,9 +56,8 @@ function Connect-MrNSGroup {
 
     $Uri = "https://$($Group):$($Port)"
     
-    #Variables set to Global scope to make this function compatible with the functions in the NimblePowerShellToolKit module
-    $Global:tokenData = TunableSSLValidator\Invoke-RestMethod -Uri "$Uri/v1/tokens" -InSecure -Method Post -Body ((@{data = @{username = $Credential.UserName;password = $Credential.GetNetworkCredential().password}}) | ConvertTo-Json)
-    $Global:RestVersion = (TunableSSLValidator\Invoke-RestMethod -Uri "$Uri/versions" -Insecure).data.name
-    $Global:session_token = $tokenData.data.session_token
-    $Global:array = $Group
+    $Script:tokenData = TunableSSLValidator\Invoke-RestMethod -Uri "$Uri/v1/tokens" -InSecure -Method Post -Body ((@{data = @{username = $Credential.UserName;password = $Credential.GetNetworkCredential().password}}) | ConvertTo-Json)
+    $Script:RestVersion = (TunableSSLValidator\Invoke-RestMethod -Uri "$Uri/versions" -Insecure).data.name
+    $Script:session_token = $tokenData.data.session_token
+    $Script:array = $Group
 }
