@@ -2,6 +2,52 @@
 <Configuration>
     <ViewDefinitions>
         <View>
+            <Name>MrNS.Token</Name>
+            <ViewSelectedBy>
+                <TypeName>MrNS.Token</TypeName>
+            </ViewSelectedBy>
+            <TableControl>
+                <TableHeaders>
+                     <TableColumnHeader>
+                        <Width>12</Width>
+                    </TableColumnHeader>                   
+                    <TableColumnHeader>
+                        <Width>15</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>35</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>24</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>24</Width>
+                    </TableColumnHeader>
+                </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>UserName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Source_IP</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Session_Token</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>CreateTime</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ModifiedTime</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                 </TableRowEntries>
+            </TableControl>
+        </View>
+        <View>
             <Name>MrNS.Volume</Name>
             <ViewSelectedBy>
                 <TypeName>MrNS.Volume</TypeName>
@@ -47,52 +93,6 @@
                             </TableColumnItem>
                             <TableColumnItem>
                                 <PropertyName>block_size</PropertyName>
-                            </TableColumnItem>
-                        </TableColumnItems>
-                    </TableRowEntry>
-                 </TableRowEntries>
-            </TableControl>
-        </View>
-        <View>
-            <Name>MrNS.Token</Name>
-            <ViewSelectedBy>
-                <TypeName>MrNS.Token</TypeName>
-            </ViewSelectedBy>
-            <TableControl>
-                <TableHeaders>
-                     <TableColumnHeader>
-                        <Width>12</Width>
-                    </TableColumnHeader>                   
-                    <TableColumnHeader>
-                        <Width>15</Width>
-                    </TableColumnHeader>
-                    <TableColumnHeader>
-                        <Width>35</Width>
-                    </TableColumnHeader>
-                    <TableColumnHeader>
-                        <Width>24</Width>
-                    </TableColumnHeader>
-                    <TableColumnHeader>
-                        <Width>24</Width>
-                    </TableColumnHeader>
-                </TableHeaders>
-                <TableRowEntries>
-                    <TableRowEntry>
-                        <TableColumnItems>
-                            <TableColumnItem>
-                                <PropertyName>UserName</PropertyName>
-                            </TableColumnItem>
-                            <TableColumnItem>
-                                <PropertyName>Source_IP</PropertyName>
-                            </TableColumnItem>
-                            <TableColumnItem>
-                                <PropertyName>Session_Token</PropertyName>
-                            </TableColumnItem>
-                            <TableColumnItem>
-                                <PropertyName>CreateTime</PropertyName>
-                            </TableColumnItem>
-                            <TableColumnItem>
-                                <PropertyName>ModifiedTime</PropertyName>
                             </TableColumnItem>
                         </TableColumnItems>
                     </TableRowEntry>
