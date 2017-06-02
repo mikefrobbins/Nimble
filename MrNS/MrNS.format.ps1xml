@@ -55,7 +55,7 @@
             <TableControl>
                 <TableHeaders>
                      <TableColumnHeader>
-                        <Width>12</Width>
+                        <Width>25</Width>
                     </TableColumnHeader>                   
                     <TableColumnHeader>
                         <Width>10</Width>
@@ -64,7 +64,7 @@
                         <Width>10</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Width>24</Width>
+                        <Width>26</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
                         <Width>18</Width>
