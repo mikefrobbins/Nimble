@@ -21,9 +21,6 @@ function Get-MrNSToken {
 .EXAMPLE
      Get-NStoken
 
-.EXAMPLE
-     Get-NStoken -Group 192.168.1.50
- 
 .INPUTS
     None
  
